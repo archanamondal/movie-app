@@ -11,7 +11,7 @@ const Button = styled.button`
     border: none;
     outline: none;
     margin-left: 20px;
-    margin-top: 80px;
+    margin-top: 150px;
 `
 const AddIcon = styled(AiOutlinePlus)`
     font-size: 25px;

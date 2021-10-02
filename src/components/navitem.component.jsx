@@ -14,7 +14,7 @@ const NavbarText = styled.h4`
     margin: 0;
     padding: 0;
     margin-left: 15px;
-    color: ${({active}) => active ? "black" : "#819CB0"};
+    color: ${({active}) => active ? "505C68" : "#819CB0"};
     font-weight: ${({active}) => active ? "bold" : "normal"}
 `
 
@@ -22,7 +22,7 @@ function Navitem({title, icon, active}) {
   return (
     <NavbarContainer>
       {/* <NavbarSubTitle text= "Menu" /> */}
-      {active && <div style={{height:"16px", width:"5px", backgroundColor:"red"}}/>}
+      {active && <div style={{height:"25px", width:"4px", backgroundColor:"#D42129", marginLeft:"0.5px"}}/>}
       <div  style={{marginLeft :active?"20px":"25px", marginTop:"6px"}}>
       {icon}
       </div>

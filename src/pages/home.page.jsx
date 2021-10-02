@@ -66,17 +66,16 @@ function Home() {
         display: "flex",
         flexDirection: "row",
         height: "200vh",
-      }}
-    >
+      }}>
+      
       <div style={{ flex: "3" }}>
-        <Sidebar />
+        <Sidebar/>
       </div>
 
       <div style={{ flex: "12", backgroundColor: "#fff" }}>
         <Navbar
           ptitle= "Ramona F."
-          ptext= "Level 12" 
-        />
+          ptext= "Level 12" />
       </div>
 
       <div style={{ flex: "1", padding: "20px" }}>
