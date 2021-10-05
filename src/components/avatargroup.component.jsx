@@ -7,9 +7,11 @@ function AvatarGroup() {
       <div>
         <Avatar imgUrl="https://i.pravatar.cc/150?u=123" />
       </div>
+
       <div style={{ marginLeft: "-10px" }}>
         <Avatar imgUrl="https://i.pravatar.cc/150?u=450" />
       </div>
+      
       <div style={{ marginLeft: "-10px" }}>
         <Avatar imgUrl="https://i.pravatar.cc/150?u=789" />
       </div>

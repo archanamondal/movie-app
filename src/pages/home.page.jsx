@@ -1,10 +1,38 @@
 import React from "react";
+import styled from "styled-components";
 import Avatar from "../components/avatar.component";
 import Sidebar from "../components/sidebar.component";
 import Card from "../components/card.component";
 import AvatarGroup from "../components/avatargroup.component";
 import AddButton from "../components/addbutton.component";
 import Navbar from "../components/navbar.component";
+import Container from "../components/container.component";
+
+
+const HomePage = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 200vh;
+`
+
+const SidebarPage = styled.div`
+  flex: 3;
+  background-color: #F9FAFE;
+`
+
+const NavbarPage = styled.div`
+  flex: 12; 
+  background-color: #F9FAFE;
+`
+
+const ContainerPage = styled.div`
+
+`
+
+const AvatarPage = styled.div`
+  flex: 0.5;
+  padding: 20px; 
+`
 
 
 const userList = [
@@ -61,31 +89,43 @@ const userList = [
 
 function Home() {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        height: "200vh",
-      }}>
-      
-      <div style={{ flex: "3" }}>
-        <Sidebar/>
-      </div>
+    <>
+    <HomePage>
 
-      <div style={{ flex: "12", backgroundColor: "#fff" }}>
+      <SidebarPage>
+        <Sidebar/>
+      </SidebarPage>
+
+      <NavbarPage>
         <Navbar
           ptitle= "Ramona F."
           ptext= "Level 12" />
-      </div>
 
-      <div style={{ flex: "1", padding: "20px" }}>
+      <ContainerPage>
+        <Container
+          Btitle= "10XP / episode"
+          ImgUrl= "https://i.pravatar.cc/150?u=789"
+          // ImgUrl= "https://i.pravatar.cc/150?u=789"
+          // ImgUrl= "https://i.pravatar.cc/150?u=789"
+          heading= "The Witcher"
+          firstpara= "98% Match"
+          secondpara= "2 seasons"
+          leftbuttontext= "Watch"
+        />
+      </ContainerPage>
+      
+      </NavbarPage>
+
+
+      <AvatarPage>
       <AddButton/>
        {userList.map(({imgUrl, active}) => {
          return(
            <Avatar imgUrl={imgUrl} active={active} />
          )
        })}
-      </div>
+      </AvatarPage>
+
 
       {/* <Card title ='Cadaver'
       imgUrl='https://i.pravatar.cc/150?u=458'
@@ -105,10 +145,10 @@ function Home() {
       <Card title ='Friends'
       imgUrl='https://i.pravatar.cc/150?u=450'
       text="We were in a break!"
-      />
-       */}
-
-    </div>
+      /> */}
+      
+    </HomePage>
+    </>
   );
 }
 

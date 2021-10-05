@@ -19,7 +19,6 @@ const Image = styled.img`
     width: 50px;
     border-radius: 10px;
     margin-top: -25px;
-
 `
 
 const CardHeading = styled.h3`
@@ -32,7 +31,6 @@ const CardPara = styled.p`
     margin-top: 5px;
     color: #858D96;
     font-size: 12px;
-
 `
 
 const Button = styled.button`

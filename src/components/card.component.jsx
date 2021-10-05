@@ -31,7 +31,6 @@ const Image = styled.img`
 
 `
 
-
 const Cardtitle = styled.h3`
     margin-top: 25px;
     font-size: 17px;
